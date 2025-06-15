@@ -1,0 +1,12 @@
+{
+  "greeting": {
+    "ko": "안녕하세요!",
+    "en": "Hello!",
+    "ja": "こんにちは！"
+  },
+  "intro": {
+    "ko": "이것은 내 첫 다국어 웹사이트입니다.",
+    "en": "This is my first multilingual website.",
+    "ja": "これは私の初めての多言語ウェブサイトです。"
+  }
+}
