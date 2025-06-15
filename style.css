@@ -11,7 +11,7 @@ body {
   font-family: 'Calibre', sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #fdfdfd;
+  background-color: white;
   color: #333;
   max-width: 100%;
   box-sizing: border-box;
@@ -83,7 +83,7 @@ body {
   flex-direction: column;
   gap: 5px;
   margin-top: 10px;
-  background:hotpink;
+  background:#ff78cb;
   padding: 10px;
   border: 1px solid black;
   position: absolute;
@@ -118,4 +118,11 @@ h1 {
 p {
   font-size: 1.2em;
   line-height: 0.7;
+}
+
+#corner-angel {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  z-index: 999;      /* 다른 요소 위에 떠 있도록 */
 }
