@@ -1,0 +1,121 @@
+/* 기본 리셋 */
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('assets/test-calibre-regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  font-family: 'Calibre', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #fdfdfd;
+  color: #333;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* 🔹 메뉴 아이콘 왼쪽 상단 고정 */
+.menu-toggle-wrap {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+}
+
+.menu-toggle {
+  font-size: 1.3em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 메뉴 박스 */
+.menu {
+  display: none;
+  flex-direction: column;
+  margin-top: 10px;
+  list-style: none;
+  padding: 20px;
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  gap: 5px;
+}
+
+.menu.show {
+  display: flex;
+}
+
+.menu li {
+  margin: 5px 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+   font-family: 'Calibre', sans-serif;
+}
+
+/* 🔹 언어 토글 오른쪽 상단 고정 */
+.lang-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+#lang-icon {
+  font-size: 1.1em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Calibre', sans-serif;
+}
+
+/* 언어 선택 박스 */
+#lang-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+  background:hotpink;
+  padding: 10px;
+  border: 1px solid black;
+  position: absolute;
+  right: 0;
+  top: 100%;
+   
+}
+
+#lang-menu.hidden {
+  display: none;
+}
+
+#lang-menu button {
+  padding: 8px 12px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  background: none;
+   font-family: 'Calibre', sans-serif;
+}
+
+#lang-menu button:hover {
+  color: white;
+}
+
+/* 콘텐츠 간단 스타일 */
+h1 {
+  font-size: 1.8em;
+  margin-top: 50px;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 0.7;
+}
