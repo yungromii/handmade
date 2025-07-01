@@ -132,7 +132,8 @@ p {
 
 .image-gallery img{
   max-width: 100%;
-  max-height: fit-content;
+  max-height: auto;
+ object-fit: contain;
 }
 
 .group {
@@ -162,7 +163,7 @@ p {
   border: 2px solid transparent;
   border-radius: 4px;
   transition: border 0.2s ease;
-  margin: 5px;
+  margin: 15px;
 }
 
 .design-btn.selected img,
