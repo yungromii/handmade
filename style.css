@@ -120,9 +120,17 @@ p {
   line-height: 0.7;
 }
 
-#corner-angel {
-  position: fixed;
-  left: 10px;
-  bottom: 10px;
-  z-index: 999;      /* 다른 요소 위에 떠 있도록 */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  justify-content: center;
+  align-items: start; /* 수직 중앙 정렬 */
+  padding: 20px;
+}
+
+.group {
+  display: flex;
+  gap: 20px;
+  align-items: start; /* 수직 중앙 정렬 */
 }
