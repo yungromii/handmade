@@ -10,11 +10,11 @@
   <!-- ☰ 메뉴 (왼쪽 상단 고정) -->
   <div class="menu-toggle-wrap">
     <button class="menu-toggle" id="menu-toggle">☰</button>
-   <ul class="menu" id="menu">
- <li><a href="notice.html">Notice</a></li>
-  <li><a href="work.html">Work</a></li>
-  <li><a href="apply.html">Apply</a></li>
-</ul>
+    <ul class="menu" id="menu">
+      <li><a href="notice.html" id="notice">Notice</a></li>
+      <li><a href="work.html" id="work">Work</a></li>
+      <li><a href="apply.html" id="apply">Apply</a></li>
+    </ul>
   </div>
 
   <!-- 🌐 언어 선택 (오른쪽 상단 고정) -->
@@ -27,10 +27,107 @@
     </div>
   </div>
 
-  <!-- 본문 콘텐츠 -->
-  <h1 id="notice"></h1>
-  <p id="contact"></p>
+  <!-- 🎯 시뮬레이터 폼 (버튼 + 이미지 UI) -->
+  <div id="optionForm" class="price-calc">
+    <h2>주문</h2>
+    <div class="design-options">
+      <p>*</p>
+      <div class="btn-group">
+        <button class="design-btn" data-price="60000">
+          <img src="assets/wallet.png" alt="wallet" />
+          <span>반지갑</span>
+        </button>
+        <button class="design-btn" data-price="60000">
+          <img src="assets/pouch.big.png" alt="pouch.big" />
+          <span>대형 파우치 (60000)</span>
+        </button>
+        <button class="design-btn" data-price="30000">
+          <img src="assets/pouch.small.png" alt="pouch.small" />
+          <span>소형 파우치 (30000)</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="wallet-options" class="sub-options" style="display: none;">
+      <p>반지갑</p>
+      <div class="btn-group">
+        <button class="option-btn" data-type="coin" data-price="10000">
+          <img src="assets/coin.png" alt="동전 칸 추가" />
+          <span>동전 수납</span>
+        </button>
+        <button class="option-btn" data-type="cash" data-price="10000">
+          <img src="assets/cash.png" alt="지폐 칸 추가" />
+          <span>지폐 수납</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="pouch-big-options" class="sub-options" style="display: none;">
+      <p>대형 파우치</p>
+      <div class="btn-group">
+        <button class="option-btn" data-type="lining" data-price="2000">
+          <img src="assets/lining.png" alt="안감 추가" />
+          <span>안감 추가</span>
+        </button>
+      </div>
+    </div>
+
+    <div id="pouch-small-options" class="sub-options" style="display: none;">
+      <p>소형 파우치</p>
+      <div class="btn-group">
+        <button class="option-btn" data-type="handle" data-price="1000">
+          <img src="assets/handle.png" alt="손잡이 추가" />
+          <span>손잡이 추가</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="difficulty-options">
+      <p>아트</p>
+      <div class="btn-group">
+        <button class="difficulty-btn" data-price="0">
+          <img src="assets/simple.png" alt="심플" />
+          <span>없음</span>
+        </button>
+        <button class="difficulty-btn" data-price="10000">
+          <img src="assets/normal.png" alt="보통" />
+          <span>기본</span>
+        </button>
+        <button class="difficulty-btn" data-price="20000">
+          <img src="assets/complex.png" alt="복잡" />
+          <span>복잡</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="extra-options">
+      <p>옵션</p>
+      <div class="btn-group">
+        <button class="option-btn" data-type="deco" data-price="2000">
+          <img src="assets/deco.png" alt="부자재 장식 추가" />
+          <span>부자재 장식 (+2000)</span>
+        </button>
+        <button class="option-btn" data-type="lettering" data-price="5000">
+          <img src="assets/lettering2.png" alt="레터링 추가" />
+          <span>레터링 (+5000)</span>
+        </button>
+        <button class="option-btn" data-type="hook" data-price="5000">
+          <img src="assets/hook.png" alt="고리 추가" />
+          <span>고리 (+5000)</span>
+        </button>
+      </div>
+    </div>
+
+    <div style="margin-top: 20px;">
+      <label>요청사항:<br>
+        <textarea name="message" rows="4" style="width: 100%;" placeholder="요청사항을 입력하세요"></textarea>
+      </label>
+    </div>
+
+    <p><strong>예상 가격: <span id="totalPrice">₩0</span></strong></p>
+  </div>
 
   <script src="script.js"></script>
+  <script src="simulator.js"></script>
 </body>
 </html>

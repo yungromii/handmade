@@ -141,3 +141,65 @@ p {
   gap: 20px;
   align-items: start; /* 수직 중앙 정렬 */
 }
+.design-btn,
+.option-btn,
+.difficulty-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.design-btn img,
+.option-btn img,
+.difficulty-btn img {
+  max-width: 250px;
+  height: auto;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: border 0.2s ease;
+  margin-bottom: 5px;
+}
+
+.design-btn.selected img,
+.option-btn.selected img,
+.difficulty-btn.selected img {
+  border-color: black;
+}
+
+.design-btn span,
+.option-btn span,
+.difficulty-btn span {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.price-calc {
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.price-calc h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+
+
+.price-calc textarea {
+  font-family: 'Calibre', sans-serif;
+  font-size: 1em;
+}
+.design-options p,
+.difficulty-options p,
+.extra-options p,
+.sub-options p {
+  display: block;
+  margin-bottom: 14px;
+}
