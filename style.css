@@ -204,3 +204,21 @@ p {
   display: block;
   margin-bottom: 14px;
 }
+
+.btn-group {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+/* 스크롤바 꾸미기 (선택사항) */
+.btn-group::-webkit-scrollbar {
+  height: 6px;
+}
+
+.btn-group::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
