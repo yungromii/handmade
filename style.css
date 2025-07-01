@@ -162,7 +162,7 @@ p {
   border: 2px solid transparent;
   border-radius: 4px;
   transition: border 0.2s ease;
-  margin-bottom: 5px;
+  margin: 5px;
 }
 
 .design-btn.selected img,
