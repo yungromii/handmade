@@ -131,6 +131,7 @@ p {
 
 .group {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   align-items: start; /* 수직 중앙 정렬 */
 }
