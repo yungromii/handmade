@@ -152,6 +152,18 @@ body {
    font-family: 'GothicA1', sans-serif;
 }
 
+.lock-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  font-family: 'GothicA1', sans-serif;
+}
+
 .design-btn img,
 .option-btn img,
 .difficulty-btn img {
@@ -163,9 +175,19 @@ body {
   margin: 5px;
 }
 
+.lock-btn img {
+  max-width: 100px;
+  height: auto;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  transition: border 0.2s ease;
+  margin: 5px;
+}
+
 .design-btn.selected img,
 .option-btn.selected img,
-.difficulty-btn.selected img {
+.difficulty-btn.selected img,
+.lock-btn.selected img {
   border-color: black;
 }
 
@@ -176,6 +198,13 @@ body {
   font-size: 0.9em;
   text-align: center;
    font-family: 'GothicA1', sans-serif;
+}
+
+.lock-btn span {
+  display: block;
+  font-size: 0.9em;
+  text-align: center;
+  font-family: 'GothicA1', sans-serif;
 }
 
 .price-calc {
@@ -230,4 +259,3 @@ p{
   font-size: 0.9em;
   line-height: 1.5em;
 }
-

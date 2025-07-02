@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     zipper: false,
     decor: false,
     hook: false,
+    cover: false,
   };
 
   const updatePrice = () => {
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("wallet-options").style.display = "none";
       document.getElementById("pouch-big-options").style.display = "none";
       document.getElementById("pouch-small-options").style.display = "none";
+      document.getElementById("etc-options").style.display = "none";
 
       // Show sub-options based on index
       if (index === 0) {
