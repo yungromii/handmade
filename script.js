@@ -8,14 +8,21 @@ function setLang(lang) {
     .then(data => {
       document.getElementById('notice').innerText = data.notice[lang];
       document.getElementById('contact').innerText = data.contact[lang];
+      document.getElementById('inform').innerText = data.inform[lang];
+      document.getElementById('wallet').innerText = data.wallet[lang];
+document.getElementById('penpouch').innerText = data.penpouch[lang];
+document.getElementById('pouch').innerText = data.pouch[lang];
+     
     });
 
   // 언어 메뉴 닫기
   document.getElementById('lang-menu').classList.add('hidden');
 }
 
-// 초기 세팅
-setLang(currentLang);
+// 초기 세팅 (DOM 로드 후 실행)
+document.addEventListener('DOMContentLoaded', () => {
+  setLang(currentLang);
+});
 
 // 언어 토글
 document.getElementById('lang-icon').addEventListener('click', () => {

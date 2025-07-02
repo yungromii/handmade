@@ -8,5 +8,35 @@
     "ko": "연락처",
     "en": "Contact",
     "ja": "お問い合わせ"
+  },
+
+  "inform": {
+    "ko": "이 사이트는 수공예 작업 포트폴리오 겸 데모 주문 페이지입니다. 이 시뮬레이션 시스템은 가격 책정의 최소 기준을 설정하여 예상 견적을 제공하기 위한 것이며, 절대적인 기준이 아닙니다. 정식 견적 및 문의는 Instagram 메시지로 부탁드립니다.",
+    "en": "This site serves as a portfolio and demo order page for handmade works. The simulation system is designed to establish minimum pricing guidelines and provide estimated quotes, but it is not definitive. For formal inquiries, please send a message on Instagram.",
+    "ja": "このサイトはハンドメイド作品のポートフォリオ兼お試し注文ページです。本シミュレーションシステムは価格設定の最低基準を設け、概算見積もりを提供するものであり、絶対的な基準ではありません。正式な見積もりやお問い合わせはInstagramのメッセージでお願いします。"
+  },
+
+  "order": {
+    "ko": "주문",
+    "en": "Order",
+    "ja": "注文"
+  },
+
+  "wallet": {
+    "ko": "반지갑",
+    "en": "Wallet",
+    "ja": "財布"
+  },
+
+  "penpouch": {
+    "ko": "필통",
+    "en": "Penpouch",
+    "ja": "ペンケース"
+  },
+
+  "pouch": {
+    "ko": "파우치",
+    "en": "Pouch",
+    "ja": "ポーチ"
   }
 }

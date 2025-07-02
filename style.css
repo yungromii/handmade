@@ -7,8 +7,15 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'GothicA1';
+  src: url('assets/GothicA1-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: 'Calibre', sans-serif;
+  font-family: 'GothicA1', sans-serif;
   margin: 0;
   padding: 20px;
   background-color: white;
@@ -27,7 +34,7 @@ body {
 }
 
 .menu-toggle {
-  font-size: 1.3em;
+  
   background: none;
   border: none;
   cursor: pointer;
@@ -58,8 +65,7 @@ body {
 .menu li a {
   text-decoration: none;
   color: white;
-  font-size: 1.3em;
-   font-family: 'Calibre', sans-serif;
+   font-family: 'GothicA1', sans-serif;
 }
 
 /* 🔹 언어 토글 오른쪽 상단 고정 */
@@ -71,11 +77,11 @@ body {
 }
 
 #lang-icon {
-  font-size: 1.1em;
+  font-size: 0.9em;
   background: none;
   border: none;
   cursor: pointer;
-  font-family: 'Calibre', sans-serif;
+  font-family: 'GothicA1', sans-serif;
 }
 
 /* 언어 선택 박스 */
@@ -90,7 +96,7 @@ body {
   position: absolute;
   right: 0;
   top: 100%;
-   
+   font-size: 0.9em;
 }
 
 #lang-menu.hidden {
@@ -99,11 +105,11 @@ body {
 
 #lang-menu button {
   padding: 8px 12px;
-  font-size: 1em;
+ 
   border: none;
   cursor: pointer;
   background: none;
-   font-family: 'Calibre', sans-serif;
+   font-family: 'GothicA1', sans-serif;
 }
 
 #lang-menu button:hover {
@@ -143,6 +149,7 @@ body {
   padding: 0;
   cursor: pointer;
   outline: none;
+   font-family: 'GothicA1', sans-serif;
 }
 
 .design-btn img,
@@ -168,6 +175,7 @@ body {
   display: block;
   font-size: 0.9em;
   text-align: center;
+   font-family: 'GothicA1', sans-serif;
 }
 
 .price-calc {
@@ -177,7 +185,7 @@ body {
 
 
 .price-calc textarea {
-  font-family: 'Calibre', sans-serif;
+  font-family: 'GothicA1', sans-serif;
   font-size: 1em;
 }
 .design-options p,
@@ -209,5 +217,17 @@ body {
 h2 {
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
+
+h1{
+  font-size: 1.2em;
+  margin-top: 60px;
+  margin-bottom: 45px;
+}
+
+p{
+  font-size: 0.9em;
+  line-height: 1.5em;
+}
+
