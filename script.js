@@ -6,13 +6,26 @@ function setLang(lang) {
   fetch('lang-data.json')
     .then(response => response.json())
     .then(data => {
-      document.getElementById('notice').innerText = data.notice[lang];
-      document.getElementById('contact').innerText = data.contact[lang];
-      document.getElementById('inform').innerText = data.inform[lang];
-      document.getElementById('wallet').innerText = data.wallet[lang];
-document.getElementById('penpouch').innerText = data.penpouch[lang];
-document.getElementById('pouch').innerText = data.pouch[lang];
-     
+      const notice = document.getElementById('notice');
+      if (notice) notice.innerText = data.notice[lang];
+
+      const contact = document.getElementById('contact');
+      if (contact) contact.innerText = data.contact[lang];
+
+      const inform = document.getElementById('inform');
+      if (inform) inform.innerText = data.inform[lang];
+
+      const order = document.getElementById('order');
+      if (order) order.innerText = data.order[lang];
+
+      const wallet = document.getElementById('wallet');
+      if (wallet) wallet.innerText = data.wallet[lang];
+
+      const penpouch = document.getElementById('penpouch');
+      if (penpouch) penpouch.innerText = data.penpouch[lang];
+
+      const pouch = document.getElementById('pouch');
+      if (pouch) pouch.innerText = data.pouch[lang];
     });
 
   // 언어 메뉴 닫기
