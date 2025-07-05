@@ -38,5 +38,89 @@
     "ko": "파우치",
     "en": "Pouch",
     "ja": "ポーチ"
+  },
+
+  "wallet-coin": {
+    "ko": "동전 칸 추가",
+    "en": "Coin Pocket",
+    "ja": "コインポケット追加"
+  },
+  "wallet-cash": {
+    "ko": "지폐 칸 추가",
+    "en": "Cash Slot",
+    "ja": "紙幣スロット追加"
+  },
+  "zipper": {
+    "ko": "지퍼",
+    "en": "Zipper",
+    "ja": "ファスナー"
+  },
+  "button": {
+    "ko": "단추",
+    "en": "Button",
+    "ja": "ボタン"
+  },
+  "velcro": {
+    "ko": "찍찍이",
+    "en": "Velcro",
+    "ja": "マジックテープ"
+  },
+  "drawstring": {
+    "ko": "복조리",
+    "en": "Drawstring",
+    "ja": "巾着ひも"
+  },
+  "flap": {
+    "ko": "덮개",
+    "en": "Flap Cover",
+    "ja": "フラップ付き"
+  },
+  "none": {
+    "ko": "없음",
+    "en": "None",
+    "ja": "なし"
+  },
+  "normal": {
+    "ko": "보통",
+    "en": "Normal",
+    "ja": "普通"
+  },
+  "complex": {
+    "ko": "복잡",
+    "en": "Complex",
+    "ja": "複雑"
+  },
+  "deco": {
+    "ko": "부자재 장식",
+    "en": "Decoration",
+    "ja": "装飾"
+  },
+  "lettering": {
+    "ko": "레터링",
+    "en": "Lettering",
+    "ja": "レタリング"
+  },
+  "hook": {
+    "ko": "고리",
+    "en": "Hook",
+    "ja": "フック"
+  }
+  ,
+  "none": {
+    "ko": "없음",
+    "en": "None",
+    "ja": "無し"
+  }
+  ,
+  "normal": {
+    "ko": "보통",
+    "en": "Normal",
+    "ja": "中"
+  }
+  ,
+  "complex": {
+    "ko": "복잡",
+    "en": "Complex",
+    "ja": "複雑"
   }
 }

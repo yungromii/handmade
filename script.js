@@ -6,26 +6,21 @@ function setLang(lang) {
   fetch('lang-data.json')
     .then(response => response.json())
     .then(data => {
-      const notice = document.getElementById('notice');
-      if (notice) notice.innerText = data.notice[lang];
+      const ids = [
+        'notice', 'contact', 'inform', 'order', 'wallet', 'penpouch', 'pouch',
+        'wallet-coin', 'wallet-cash',
+        'zipper', 'button', 'velcro', 'drawstring', 'flap',
+        'none', 'normal', 'complex',
+        'deco', 'lettering', 'hook',
+        'totalPrice'
+      ];
 
-      const contact = document.getElementById('contact');
-      if (contact) contact.innerText = data.contact[lang];
-
-      const inform = document.getElementById('inform');
-      if (inform) inform.innerText = data.inform[lang];
-
-      const order = document.getElementById('order');
-      if (order) order.innerText = data.order[lang];
-
-      const wallet = document.getElementById('wallet');
-      if (wallet) wallet.innerText = data.wallet[lang];
-
-      const penpouch = document.getElementById('penpouch');
-      if (penpouch) penpouch.innerText = data.penpouch[lang];
-
-      const pouch = document.getElementById('pouch');
-      if (pouch) pouch.innerText = data.pouch[lang];
+      ids.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && data[id] && data[id][lang]) {
+          el.innerText = data[id][lang];
+        }
+      });
     });
 
   // 언어 메뉴 닫기
